@@ -8,6 +8,7 @@ This website is dedicated to sharing and discussing favorite video games, specif
 # Website Structure (Site Map)
 
 - **Homepage**: Central hub providing navigation to game-specific pages, a welcome section, resources, and the footer.
+- **Grid on Main Page**: Real-time updated information about the last added user favorite.
 - **Game Pages (Skyrim, Kenshi, Fallout 4)**: Each page dedicated to one of the games, featuring user-submitted content and a form for submitting tips.
 - **Favorite Games Panel**: A section for users to add and view their favorite games.
 - **Welcome Section**: Introduction to the site and its purpose.
