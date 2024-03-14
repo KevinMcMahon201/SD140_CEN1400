@@ -14,6 +14,8 @@ This website is dedicated to sharing and discussing favorite video games, specif
 - **Resources Section**: Links to external gaming resources and mods.
 - **Footer**: Contains contact information and copyright notice.
 
+  ![Detailed Website Map Visualization](https://github.com/KevinMcMahon201/SD140_CEN1400/blob/main/webmap.png)
+
 # Interactions and Outcomes
 
 - **Game-Specific Submit Tip Forms**: Users can submit their tips for Skyrim, Kenshi, or Fallout 4. This interaction enriches the site with user-generated content and helps other gamers.
