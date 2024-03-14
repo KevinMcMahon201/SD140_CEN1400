@@ -1,0 +1,148 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body, div, nav, aside, section {
+    text-align: center; /* Center content */
+}
+
+.logo, .game-button, .resource-button {
+    width: auto;
+    height: 100px;
+    margin: 10px;
+}
+
+.resource-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer styling */
+[data-role="footer"] {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #333; /* Dark background for footer */
+    color: white; /* White text color */
+}
+
+/* Fix for header logo */
+.logo {
+    max-width: 50%; /* Ensure logo fits within header */
+    height: auto; /* Adjust height automatically */
+    margin: 0 auto; /* Center logo */
+}
+
+/*body {
+    font-family: 'Calibri', sans-serif;
+    background-color: #000; /* Black background for better contrast */
+   /* color: white; /* Adjusted for better readability on dark background */
+/*}
+
+/* Since jQuery Mobile uses its own classes for headers and footers, these styles might need adjustments */
+.ui-header, .ui-footer {
+    background-color: #900 !important; /* Dark red, with !important to override jQuery Mobile styles */
+    color: white !important; /* Ensure text color is white for readability */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.ui-header h1, .ui-footer h4 {
+    font-family: 'Impact', sans-serif;
+    font-size: 24px; /* Adjusted for mobile readability */
+}
+
+/* Adjusting container styles for mobile viewing */
+.container {
+    display: block; /* Flex may not be necessary with jQuery Mobile's structure */
+    min-height: 87vh; /* Full viewport height */
+}
+
+/* Navigation styles adapted for jQuery Mobile navbar */
+.ui-navbar {
+    background-color: #600 !important;
+    width: 100%;
+    height: 100px
+}
+
+.ui-navbar ul {
+    list-style-type: none;
+    margin: 0; /* Override default margins */
+    padding: 0; /* Override default padding */
+}
+
+.ui-navbar li a {
+    color: white !important;
+    background-color: transparent !important;
+    height: 100px;
+}
+
+.ui-navbar li a.ui-btn-active {
+    background-color: #555 !important;
+}
+
+/* Main content and aside styles */
+.ui-content, .resources {
+    background-color: #ccc;
+    color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ui-content h2, .resources h3 {
+    font-family: 'Impact', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.resources {
+    width: 100%;
+
+.image-placeholder {
+    background-color: #900;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+/* Targeting links within jQuery Mobile listview */
+.ui-content a.ui-btn {
+    font-family: 'Impact', sans-serif;
+    font-size: 12px;
+}
+
+/* Footer styles adapted for jQuery Mobile */
+.ui-footer {
+    background-color: #300 !important; /* Very dark red, with !important to override jQuery Mobile styles */
+    color: white !important;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto; /* Keeps a two-column layout */
+    gap: 10px;
+    padding: 10px;
+    background-color: #333; /* Dark grey background for the container */
+    color: #fff; /* White text for better readability */
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: left;
+    background-color: #555; /* grey for items */
+    color: #fff; /* White text color */
+    border: 2px solid #a00; /* Red border */
+}
+
+
+.grid-item:nth-child(odd) {
+    background-color: #a00;
+    color: #fff;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KEVIN'S FAVORITE VIDEO GAMES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="themes/kevin-theme.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="home">
+    <div data-role="header">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <h1>KEVIN'S FAVORITE VIDEO GAMES</h1>
+    </div>
+    <section class="welcome">
+        <h2>Welcome</h2>
+        <p>This paragraph will be an introduction into why these games were chosen and how I found them. [content]</p>
+    </section>
+    <div data-role="panel" id="favoritesPanel" data-display="overlay" data-theme="c">
+        <h3>Add Favorite Game</h3>
+        <form id="favoriteGameForm">
+            <label for="favoriteGameInput">Favorite Game:</label>
+            <input type="text" id="favoriteGameInput" placeholder="Enter your favorite game">
+            <button type="submit">Add Favorite</button>
+        </form>
+        <h3>Your Favorite Games</h3>
+        <ul id="favoritesList"></ul>
+    </div>
+
+
+    <div role="main" class="ui-content">
+        <a href="#favoritesPanel" data-role="button" data-theme="b" data-icon="grid" data-inline="true">Add Your Favorite Games</a>
+        <nav data-role="navbar">
+            <ul data-role="listview" data-inset="true" data-theme="a">
+                <li><a href="#home"><img src="images/home.png" alt="Home" class="game-button"></a></li>
+                <li><a href="#skyrim-page"><img src="images/Skyrim.png" alt="Skyrim" class="game-button"></a></li>
+                <li><a href="#kenshi-page"><img src="images/kenshi.png" alt="Kenshi" class="game-button"></a></li>
+                <li><a href="#fallout4-page"><img src="images/fallout4.png" alt="Fallout 4" class="game-button"></a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <aside class="resources">
+        <div class="grid-container" >
+            <div class="grid-item">Last Game Added:</div>
+            <div class="grid-item" id="lastFavoriteGame"></div>
+            <div class="grid-item">Time Added:</div>
+            <div class="grid-item" id="lastFavoriteTime"></div>
+            <div class="grid-item">Date Added:</div>
+            <div class="grid-item" id="lastFavoriteDate"></div> <!-- Placeholder for the date -->
+        </div>
+        <div class="resource-buttons">
+            <a href="http://nexusmods.com"><img src="images/nexus.png" alt="Nexus Mods" class="resource-button"></a>
+            <a href="https://www.fandom.com/explore"><img src="images/wiki.png" alt="Game Wikis" class="resource-button"></a>
+        </div>
+    </aside>
+    <div data-role="footer">
+        <h4>Kevin McMahon | kgmcmahon973@gmail.com | © 2024</h4>
+    </div>
+</div>
+
+<!-- Skyrim Page -->
+<div data-role="page" id="skyrim-page" data-theme="a">
+    <div data-role="header">
+        <h1>Skyrim</h1>
+        <a href="#home" data-rel="back" data-icon="back">Back</a>
+    </div>
+    <div role="main" class="ui-content">
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Search tips...">
+            <li><a href="#">Modding Guide <img src="images/icon.png" alt="Icon" class="ui-li-icon"></a></li>
+            <li><a href="#">Best Weapons</a></li>
+            <li><a href="#">Easter Eggs</a></li>
+        </ul>
+        <form id="skyrim-form">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="url" name="website" placeholder="Website (optional)">
+            <textarea name="tip" placeholder="Share a tip, cheat, or exploit"></textarea>
+            <input type="submit" value="Submit Tip">
+        </form>
+    </div>
+    <div data-role="footer">
+        <h4>Share your knowledge of Skyrim</h4>
+    </div>
+</div>
+
+<!-- Kenshi Page -->
+<div data-role="page" id="kenshi-page" data-theme="b">
+    <div data-role="header">
+        <h1>Kenshi</h1>
+        <a href="#home" data-rel="back" data-icon="back">Back</a>
+    </div>
+    <div role="main" class="ui-content">
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Search tips...">
+            <li><a href="#">Survival Guide <img src="images/icon.png" alt="Icon" class="ui-li-icon"></a></li>
+            <li><a href="#">Base Building</a></li>
+            <li><a href="#">Character Development</a></li>
+        </ul>
+        <form id="kenshi-form">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="url" name="website" placeholder="Website (optional)">
+            <textarea name="tip" placeholder="Share a tip, cheat, or exploit"></textarea>
+            <input type="submit" value="Submit Tip">
+        </form>
+    </div>
+    <div data-role="footer">
+        <h4>Share your knowledge of Kenshi</h4>
+    </div>
+</div>
+
+<!-- Fallout 4 Page -->
+<div data-role="page" id="fallout4-page" data-theme="c">
+    <div data-role="header">
+        <h1>Fallout 4</h1>
+        <a href="#home" data-rel="back" data-icon="back">Back</a>
+    </div>
+    <div role="main" class="ui-content">
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Search tips...">
+            <li><a href="#">Crafting Guide <img src="images/icon.png" alt="Icon" class="ui-li-icon"></a></li>
+            <li><a href="#">Best Companions</a></li>
+            <li><a href="#">Hidden Locations</a></li>
+        </ul>
+        <form id="fallout4-form">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="url" name="website" placeholder="Website (optional)">
+            <textarea name="tip" placeholder="Share a tip, cheat, or exploit"></textarea>
+            <input type="submit" value="Submit Tip">
+        </form>
+    </div>
+    <div data-role="footer">
+        <h4>Share your knowledge of Fallout 4</h4>
+    </div>
+</div>
+
+<script src="script/webstorage.js"></script>
+</body>
+</html>
