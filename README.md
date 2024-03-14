@@ -1,6 +1,8 @@
 # SD140_CEN1400
 Course Project - Website using JQuery Mobile
 
+**URL**: http://sotd.us/kevinmcmahon/SD140_CEN1400/project/home.html
+
 # Website Summary
 
 This website is dedicated to sharing and discussing favorite video games, specifically **Skyrim**, **Kenshi**, and **Fallout 4**. It allows users to submit tips, tricks, and guides for these games, and also to list and share their favorite games. The site is designed to foster a community of gamers who can contribute knowledge, discover new gameplay elements, and share their gaming experiences.
